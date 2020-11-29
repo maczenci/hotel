@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotel Gambit</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Thasadith&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <a class="navbar-brand" href="#">Hotel Gambit</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#about">Rólunk</a>
+                <a class="nav-item nav-link" href="#rooms">Szobáink</a>
+                <a class="nav-item nav-link" href="#wellness">Wellness & Spa</a>
+                <a class="nav-item nav-link" href="#gastro">Gasztronómia</a>
+                <a class="nav-item nav-link" href="#gallery">Galéria</a>
+                <a class="nav-item nav-link" href="#contact">Kapcsolat</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="oldalreszek" id="oldalcim_container">
+        <img src="hotel.jpg" style="width: 100%;">
+        <div class="content">
+            <h1>Üdvözöljük a Hotel Gambit ***** weboldalán!</h1>
+            <p>Fedezze fel hotelünk kiemelkedő ajánlatait!</p>
+        </div>
+    </div>
+
+    <div class="oldalreszek" id="oldalcim_container_mobile">
+        <div class="content">
+            <h1>Üdvözöljük a Hotel Gambit ***** weboldalán!</h1>
+            <p>Fedezze fel hotelünk kiemelkedő ajánlatait!</p>
+        </div>
+    </div>
+
+    <div class="oldalreszek" id="elso">
+        <div class="col-sm-12">
+        <br>
+        <h2 id="about">Rólunk</h2>
+        <br>
+        <div class="container">
+                <p>A Hotel Gambit***** Kelet -Magyarország első ötcsillagos konferencia és wellness szállodájaként a
+                    debreceni Nagyerdőnek a kapujában nyitotta meg szobáit és lakosztályait.</p>
+                <p>A Hotel Gambit***** luxus lakosztályokkal, apartmanokkal és ötcsillagos szállodai színvonalnak
+                    megfelelően kialakított alapkategóriájú szobákkal várja vendégeit.
+                    Ez bizonyítja, hogy a Hotel Gambit***** 2008-ban elnyerte a legszebb szállodai szoba díjat.</p>
+                <p>Ez az a hely, ahol a nyugalom, a kultúra és a modern világ találkozik.</p>
+        </div>
+            <div class="item">
+                <img src="kint.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="oldalreszek" id="masodik">
+        <br>
+        <h2 id="rooms">Szobáink</h2>
+        <br>
+    
+        <div class="row">
+            <div class="col-md-3">
+                <div class="gallery">
+                    <a target="_blank" href="csaladi.jpg">
+                        <img src="csaladi.jpg" width="600" height="400">
+                    </a>
+                    <div class="desc">Családi lakosztály</div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="gallery">
+                    <a target="_blank" href="egyagyas.jpg">
+                        <img src="egyagyas.jpg" width="600" height="400">
+                    </a>
+                    <div class="desc">Deluxe egyágyas szoba</div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="gallery">
+                    <a target="_blank" href="ketagyas.jpg">
+                        <img src="ketagyas.jpg" width="600" height="400">
+                    </a>
+                    <div class="desc">Superior kétágyas szoba</div>
+                </div>
+            </div>  
+
+            <div class="col-md-3">
+                <div class="gallery">
+                    <a target="_blank" href="apartman.jpg">
+                        <img src="apartman.jpg" width="600" height="400">
+                    </a>
+                    <div class="desc">Apartman bérlés</div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="foglalas">
+                <label>Választott szobatípus:</label>
+                <select id="szoba" onchange="frissitsdASzemelyeket()">
+                    <option value="1">Családi lakosztály</option>
+                    <option value="2">Deluxe egyágyas szoba</option>
+                    <option value="3">Superior kétágyas szoba</option>
+                    <option value="4">Apartman bérlés</option>
+                </select>
+            <br>
+                <label>Személyek száma:</label>
+                <select id="szam" onchange="frissitsdASzemelyeket()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            <br>
+                <label>Napok száma:</label>
+                <select id="napok" onchange="frissitsdASzemelyeket()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            <br><br>
+                <label id="osszeg">Ár:</label>
+            <br><br>
+                <button onclick="alert('Foglalását rögzítettük.\nKöszönjük, hogy minket választott!')">Foglalás</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="oldalreszek" id="harmadik">
+        <div class="col-sm-12">
+            <br>
+            <h2 id="wellness">Wellness & Spa</h2>
+            <br>
+            <div class="container">
+                <div class="item">
+                    <p>A Hotel Gambit***** wellness részlege közel 1000 négyzetméteren egyedülálló szauna parkkal és
+                    hozzátartozó pihenőparkkal várja vendégeit.
+                    <p>A wellness centrum több medencével, többek közt 25- méteres úszómedencével, meleg vizes relaxációs
+                    medencével, gyermekmedencével, valamint szoláriummal felszerelt.</p>
+                    <p>A wellness részleg két finn szaunával rendelkezik.</p>
+                    <br><br>
+                    <p>Wellness belépők:</p>
+
+                    <table>
+                        <tr>
+                            <td>- Napi belépő hétköznap (hétfőtől péntekig): 4.500 Ft/ fő</td>
+                        </tr>
+                        <tr>
+                            <td>- Napi belépő hétvégén (szombat és vasárnap): 5.000 Ft/ fő</td>
+                        </tr>
+                        <tr>
+                            <td>- 1 havi wellness bérlet: 40.000 Ft/ fő</td>
+                        </tr>
+                    </table>
+            </div>
+        </div>
+            <div class="item">
+                <img src="well2.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="oldalreszek" id="negyedik">
+        <div class="col-sm-12">
+        <br>
+            <h2 id="gastro">Gasztronómia</h2>
+        <br>
+                <p>A szálloda gasztronómiai kínálatának összeállításánál elsődleges célként szerepelt a változatosság.</p>
+                <p>Az étlapon szerepelnek magyaros, a Hajdúságra jellemző ételek, de megtalálhatóak a nemzetközi konyha elemei is.</p>
+                <p>A szálloda igyekszik kiegyensúlyozott étrendet biztosítani a lisztérzékenyek, különböző ételallergiákkal együtt élő vendégek részére.</p>
+                <p>A szállóvendégek részére amerikai svédasztalos büféreggelivel és azon belül is a´ la minute reggelivel kedveskedik, a több mint háromszáz féle választható reggeli kínálat mellett. A reggeli során az a´la minute szakács szinte bármilyen ételt frissen elkészít legyen szó omlett, amerikai palacsinta vagy bármelyik közkedvelt ételről.</p>
+                <p>Az ebédek és vacsorák tekintetében lehetőség van svédasztalos, illetve 4 vagy 5 fogásos tányérszervizes felszolgálásra is.</p>
+                <p>A Nagyerdő szívében a grill ételek és az a´ la carte étlapról választható ételek elfogyasztása mellett hűsítőként koktélok, csapolt sör, pezsgő, pálinka vagy akár nemzetközi és hazai borok szerepelnek a kínálatban.</p>      
+            </div>
+    </div>
+
+    <div class="oldalreszek" id="otodik">
+        <br>
+        <h2 id="gallery">Galéria</h2>
+        <br>
+        <div class="w3-content w3-display-container">
+            <img class="mySlides" src="szoba1.png">
+            <img class="mySlides" src="peksutik.jpg">
+            <img class="mySlides" src="narile.png">
+            <img class="mySlides" src="etterem.jpg">
+            <img class="mySlides" src="bar.jpg">
+            <img class="mySlides" src="gaszto.jpeg">
+            <img class="mySlides" src="medence.png">
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="oldalreszek" id="hatodik">
+        <div class="col-sm-12">
+        <br>
+        <h2 id="contact">Kapcsolat</h2>
+        <br>
+        <table>
+            <tr>
+                <td>Elérhetőségeink:</td>
+            </tr>
+            <tr>
+                <td>Cím: 4032 Debrecen, Nagyerdei krt. 1.</td>
+            </tr>
+            <tr>
+                <td>Telefonszám: +36 52 510 900</td>
+            </tr>
+            <tr>
+                <td>E-mail cím: info@hotelgambit.hu</td>
+            </tr>
+            <tr>
+                <td>Recepció: +36 26 398 311</td>
+            </tr>
+            <tr>
+                <td>Asztalfoglalás: +36 70 443 96 27</td>
+            </tr>
+        </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

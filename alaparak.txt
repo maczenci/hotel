@@ -1,0 +1,11 @@
+családi:
+2400 - alapár
+
+deluxe egyágyas:
+5500 - alapár
+
+superior:
+6300 - alapár
+
+apartman:
+12600 - alapár

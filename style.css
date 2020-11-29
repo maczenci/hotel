@@ -1,0 +1,316 @@
+.oldalreszek {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+html, body {
+    overflow-x: hidden;
+    font-family:'Thasadith', sans-serif;
+}
+
+p{
+    width: 100%;
+    text-align: center;
+}
+
+.content p{
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+li{
+    list-style-type: none;
+}
+
+#elso {
+    background-color: #dbb692;
+    color: white;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+#elso .container {
+    padding-bottom: 15px;
+}
+
+#masodik{
+    background-color: #eedecd;
+    color: black;
+}
+
+#masodik div.gallery {
+    border: 1px solid #ccc;
+    width: 250px;
+    margin: auto;
+  }
+  
+#masodik div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+#masodik div.gallery img {
+    width: 100%;
+    object-fit: cover;
+    height: 180px;
+    width: 250px;
+    margin: auto;
+ }
+  
+#masodik div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+#harmadik{
+    background-color: black;
+    color: #dbb692;
+    padding-bottom: 40px;
+}
+#negyedik{
+    background-color: #dbb692;
+    color: white;
+    padding-bottom: 40px;
+}
+
+#negyedik p{
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+#otodik{
+    background-color: #eedecd;
+    color: black;
+    padding-bottom: 40px;
+}
+
+#otodik img{
+    margin: auto;
+    display: block;
+    padding-bottom: 20px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#hatodik{
+    background-color: black;
+    color: #dbb692;
+    padding-bottom: 40px;
+}
+
+
+/*Navigációs sáv*/
+
+.navbar-custom { 
+    background-color: #dbb692;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+/*Címsáv*/
+
+#oldalcim_container {
+    position: relative;
+    max-width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+#oldalcim_container img {
+      vertical-align: middle;
+      margin: auto;
+      margin-left: auto;
+      margin-right: auto;
+}
+  
+#oldalcim_container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 30px;
+}
+
+#oldalcim_container_mobile{
+    display: none;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-image: url(hotel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95.5vh;
+}
+
+#oldalcim_container_mobile h1{
+    font-size: 5vw;
+}
+
+#oldalcim_container_mobile .content{
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 30px;
+}
+
+.container {
+    justify-content: center;
+    text-align: center;
+}
+
+li{
+    text-align: center;
+}
+
+.item {
+    margin: 5px;
+}
+
+.item img{
+    max-width: 100%;
+    margin: auto;
+}
+
+img{
+    display: flex;
+}
+
+.item p{
+    text-align: justify;
+    width: 100%;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+td {
+    text-align: center;
+}
+
+.mySlides {
+    max-width: 100%;
+    height: auto;
+}
+
+button, select{
+    margin: 5px;
+    padding: 3px;
+}
+
+button{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+}
+
+.foglalas{
+    max-width: 100%;
+    float: right;
+    vertical-align: center;
+    padding: 20px;
+}
+
+.col-md-3 {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.col-md-5 {
+    max-width: 400px;
+    margin: auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #oldalcim_container {
+        display: none;
+    }
+
+    #oldalcim_container_mobile {
+        display: flex;
+    }
+
+    .oldalreszek{
+        height: fit-content;
+    }
+
+    p, li, td{
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    .container {
+        margin-top: 2%;
+        width: 100%;
+    }
+
+    #harmadik p{
+        text-align: center;
+    }
+
+    p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .h2 {
+        font-size: 4vw;
+    }
+
+    td, navbar-nav, masodik div.desc{
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        justify-content: center;
+    }
+      
+    .oldalreszek{
+        height: fit-content;
+    }
+
+    p, li, td{
+        font-size: 1.4vw;
+    }
+
+    h2 {
+        font-size: 2.8vw;
+    }
+
+    .navbar-nav {
+        font-size: 1.3vw;
+    }
+
+    #masodik div.desc {
+        font-size: 1.3vw;
+    }
+
+    .col-md-3 { 
+        max-width: unset;
+    }
+}
